@@ -21,7 +21,8 @@ header {
 
 main {
     margin: 0 auto;
-    width: 500px;
+    max-width: 700px;
+    width: 90%;
 }
 
 h1 {
@@ -39,7 +40,7 @@ picture {
 
 img {
     display: block;
-    width: 485px;
+    width: 685px;
     height: auto;
 }
 
