@@ -48,12 +48,12 @@ p{
     text-align: center;
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
-nav.redes-sociais{
-    background-color: var(--cor-primaria);
+nav.socialmedia{
+    background-color: var(--cor-secundaria);
 }
 
 .hero {
@@ -84,6 +84,14 @@ nav.redes-sociais{
     margin: 0;
 }
 
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    position: absolute;
+}
+
 p.hero{
 padding: 10px;
 }
@@ -94,20 +102,20 @@ padding: 10px;
     border-radius: 5px;
 }
 
-.redes-sociais {
+.socialmedia {
     text-align: center;
 }
 
-.redes-sociais a {
+.socialmedia a {
     display: inline-block;
     margin: 0 5px;
 }
 
-.redes-sociais p {
+.socialmedia p {
     margin-top: 10px;
 }
 
-.redes-sociais img {
+.socialmedia img {
     width: 25px;
     height: auto;
 }
