@@ -9,7 +9,7 @@
 }
 
 header {
-color: #fff;
+color: rgb(51 51 51);
 
 }
 
@@ -24,7 +24,7 @@ box-sizing: border-box;
 
 body {
     font-family: var(--fonte-body);
-    color: #333;
+    color: rgb(0 0 0);
 }
 
 header, main, footer {
@@ -34,12 +34,18 @@ header, main, footer {
 
 h1 {
 font-family: var(--fonte-titulo);
-color: var(--cor-primaria);
+color: rgb(0 0 0);
 text-align: center;
 
 }
 
-h2 {
+.historia h2 {
+font-family: var(--fonte-titulo);
+color: #000;
+text-align: center;  
+}
+
+.sobre h2 {
 font-family: var(--fonte-titulo);
 color: var(--cor-secundaria);
 text-align: center;  
