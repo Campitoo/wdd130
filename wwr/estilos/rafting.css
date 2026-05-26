@@ -3,8 +3,12 @@
 --cor-secundaria: #f4a261;
 --cor-destaque1: #264653;
 --cor-destaque2: #e9c46a;
+--cor-cinza: #515151;
+--cor-black: #000;
+--cor-white: #fff;
 --fonte-titulo: "Times New Roman", "Georgia", serif;
 --fonte-body: Arial, Helvetica, sans-serif;
+
 
 }
 
@@ -13,9 +17,9 @@ display: grid;
 grid-template-columns: 150px 1fr;
 align-items: center;
 
-color: rgb(51 51 51);
+color: var(--cor-cinza);
 padding: 16px;
-background-color: #fff;
+background-color: var(--cor-white);
 
 }
 
@@ -46,7 +50,7 @@ box-sizing: border-box;
 
 body {
     font-family: var(--fonte-body);
-    color: rgb(0 0 0);
+    color: var(--cor-black);
 }
 
 header, footer, .grid {
@@ -63,19 +67,19 @@ h1 {
     padding: 16px;
     opacity: 0.7;
     background-color: var(--cor-destaque1);
-    color: #fff;
+    color: var(--cor-white);
 
 }
 
 .historia h2 {
 font-family: var(--fonte-titulo);
-color: #000;
+color: var(--cor-black);
 text-align: center;  
 }
 
 .sobre h2 {
 font-family: var(--fonte-titulo);
-color: rgb(51 51 51);
+color: var(--cor-cinza);
 text-align: center;  
 }
 
@@ -97,13 +101,13 @@ gap: 20px;
 
 nav a {
 text-decoration: none;
-color: #000;
+color: var(--cor-black);
 font-weight: bold;
 }
 
 nav.socialmedia{
     background-color: var(--cor-primaria);
-    color: rgb(255 255 255);
+    color: var(--cor-white);
     
 }
 
@@ -180,5 +184,5 @@ padding: 10px;
 }
 
 footer p {
-    color: #fff;
+    color: var(--cor-white);
 }
