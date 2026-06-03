@@ -1,51 +1,19 @@
 :root {
---cor-primaria: #055a05;
---cor-secundaria: #f4a261;
---cor-destaque1: #264653;
---cor-destaque2: #e9c46a;
---cor-cinza: #515151;
---cor-black: #000;
---cor-white: #fff;
---fonte-titulo: "Times New Roman", "Georgia", serif;
---fonte-body: Arial, Helvetica, sans-serif;
-
-
-}
-
-header {
-display: grid;
-grid-template-columns: 150px 1fr;
-align-items: center;
-
-color: var(--cor-cinza);
-padding: 16px;
-background-color: var(--cor-white);
-
-}
-
-.grid {
-    display: grid;
-  align-items: center;
-}
-main {
-  grid-column: 2/3;
-  margin: 1rem;
-}
-
-aside {
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  grid-row: 1/2;
+    --cor-primaria: #055a05;
+    --cor-secundaria: #f4a261;
+    --cor-destaque1: #264653;
+    --cor-destaque2: #e9c46a;
+    --cor-cinza: #515151;
+    --cor-black: #000;
+    --cor-white: #fff;
+    --fonte-titulo: "Times New Roman", "Georgia", serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
 }
 
 * {
-
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -53,8 +21,35 @@ body {
     color: var(--cor-black);
 }
 
-header, footer, .grid {
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    color: var(--cor-cinza);
+    padding: 16px;
+    background-color: var(--cor-white);
+}
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+header,
+footer,
+.grid {
     margin: 0 auto;
 }
 
@@ -68,76 +63,61 @@ h1 {
     opacity: 0.7;
     background-color: var(--cor-destaque1);
     color: var(--cor-white);
-
 }
 
 .historia h2 {
-font-family: var(--fonte-titulo);
-color: var(--cor-black);
-text-align: center;  
+    font-family: var(--fonte-titulo);
+    color: var(--cor-black);
+    text-align: center;
 }
 
 .sobre h2 {
-font-family: var(--fonte-titulo);
-color: var(--cor-cinza);
-text-align: center;  
+    font-family: var(--fonte-titulo);
+    color: var(--cor-cinza);
+    text-align: center;
+    width: 100%;
 }
 
-nav, p , section, article {
+nav,
+p,
+section,
+article {
     padding: 8px;
-
 }
 
-p{
+p {
     text-align: center;
 }
 
 nav {
-display: flex;
-justify-content: flex-end;
-align-items: center;
-gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
 }
 
 nav a {
-text-decoration: none;
-color: var(--cor-black);
-font-weight: bold;
+    text-decoration: none;
+    color: var(--cor-black);
+    font-weight: bold;
 }
 
-nav.socialmedia{
+nav.redes-sociais {
     background-color: var(--cor-primaria);
     color: var(--cor-white);
-    
 }
+
+/* HERO */
 
 .hero {
     position: relative;
     width: 100%;
+    text-align: center;
 }
 
 .hero img {
     display: block;
     width: 100%;
-}
-
-.hero-box{
-    
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    background: var(--cor-destaque2);
-    padding: 10px 16px;
-
-    align-items: center;
-    gap: 10px;
-    display: flex;
-}
-
-.hero-box p {
-    margin: 0;
 }
 
 .hero h1 {
@@ -148,40 +128,116 @@ nav.socialmedia{
     position: absolute;
 }
 
-p.hero{
-padding: 10px;
+.hero article img {
+    float: right;
+    width: 125px;
 }
 
-.mini-img{
+p.hero {
+    padding: 10px;
+}
+
+.hero-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: var(--cor-destaque2);
+    padding: 10px 16px;
+}
+
+.hero-box p {
+    margin: 0;
+}
+
+
+.mini-img {
     width: 60px;
     padding: 20px;
     border-radius: 5px;
 }
 
-.socialmedia {
+
+
+.redes-sociais {
     text-align: center;
 }
 
-.socialmedia a {
+.redes-sociais a {
     display: inline-block;
     margin: 0 5px;
     text-decoration: none;
 }
 
-.socialmedia p {
+.redes-sociais p {
     margin-top: 10px;
 }
 
-.socialmedia img {
+.redes-sociais img {
     width: 25px;
     height: auto;
     color: var(--cor-secundaria);
 }
 
-.hero article img{
-    float: right;
-    width: 125px;
+
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
 }
+
+.funcionario img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.contato {
+      display: flex;
+    justify-content: center; 
+    align-items: center;  
+    gap: 50px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.informacoes form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.informacoes input,
+.informacoes textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+.proposito {
+    margin: 10px 0;
+}
+
+.proposito input {
+    margin-right: 8px;
+}
+
+.newsletter {
+    margin: 15px 0;
+}
+
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
 
 footer p {
     color: var(--cor-white);
