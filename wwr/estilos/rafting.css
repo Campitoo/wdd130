@@ -60,6 +60,7 @@ footer,
 .hero2 h1 {
     font-weight: bold;
     text-align: center;
+    padding-top: 20px;
 }
 
 .hero h1 {
@@ -123,8 +124,9 @@ nav.redes-sociais {
 }
 
 .hero img {
-    display: block;
     width: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .hero article {
@@ -164,7 +166,6 @@ p.hero {
     padding: 20px;
     border-radius: 5px;
 }
-
 
 
 .redes-sociais {
@@ -244,4 +245,99 @@ button {
 
 footer p {
     color: var(--cor-white);
+}
+
+.passeios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.passeio {
+    background-color: var(--cor-white);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.passeio img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.passeio h2 {
+    text-align: center;
+    color: var(--cor-destaque1);
+    margin-top: 1rem;
+}
+
+.passeio p {
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.tabela-passeios {
+    margin: 3rem 0;
+}
+
+.tabela-passeios h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--cor-destaque1);
+}
+
+.tabela-passeios table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-passeios th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-white);
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabela-passeios tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.cta {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.cta h2 {
+    color: var(--cor-destaque1);
+    margin-bottom: 1rem;
+}
+
+.botao-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 24px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-black);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.botao-cta:hover {
+    background-color: var(--cor-destaque2);
+}
+
+@media (max-width: 900px) {
+    .passeios {
+        grid-template-columns: 1fr;
+    }
 }
